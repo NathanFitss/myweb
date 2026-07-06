@@ -1,10 +1,46 @@
-export default function HomePage() {
-  return (
-    <main className="min-h-screen flex items-center justify-center">
+import Logo from "@/components/Logo";
+import LinkCard from "@/components/LinkCard";
 
-      <h1 className="text-5xl font-semibold">
-        NathanFits
-      </h1>
+export default function Home() {
+  return (
+    <main className="min-h-screen">
+
+      <section
+        className="
+        mx-auto
+        max-w-md
+        px-6
+        py-20
+      "
+      >
+
+        <Logo />
+
+        <div className="mt-14 space-y-5">
+
+          <LinkCard
+            title="🛍 Shopee"
+            href="#"
+          />
+
+          <LinkCard
+            title="📷 Instagram"
+            href="#"
+          />
+
+          <LinkCard
+            title="🎵 TikTok"
+            href="#"
+          />
+
+          <LinkCard
+            title="💬 WhatsApp"
+            href="#"
+          />
+
+        </div>
+
+      </section>
 
     </main>
   );
